@@ -16,6 +16,7 @@
         <include>Viewtype-Landscape</include>
         <include>Viewtype-LandscapeMovies</include>     <!--VideosExtras-->
         <include>Viewtype-LandscapePoster</include>     <!--VideosExtras-->
+        <include>Viewtype-PosterInfo</include>     <!--VideosExtras-->
         <include>Viewtype-Poster</include>
         <include>Viewtype-ClassicPoster</include>       <!--VideosExtras-->
         <include>Viewtype-ClassicPosterSmall</include>  <!--VideosExtras-->
@@ -675,6 +676,50 @@
     <variable name="PvrRecordingsIconSmall">
         <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/landscape-small.png]</value>
+    </variable>
+
+    <!-- Info -->
+    <variable name="ListItem.Label">
+        <value condition="ListItem.IsPlaying">$INFO[ListItem.Label]</value>
+        <value>$INFO[ListItem.Label]</value>
+    </variable>
+    
+    <variable name="ListItem.Title">
+        <value condition="ListItem.IsPlaying">$INFO[ListItem.Title]</value>
+        <value>$INFO[ListItem.Title]</value>
+    </variable>
+    
+    <variable name="ListItem.ChannelNumber">
+        <value condition="ListItem.IsPlaying">$INFO[ListItem.ChannelNumber]</value>
+        <value>$INFO[ListItem.ChannelNumber]</value>
+    </variable>
+    
+    <variable name="ListItem.StartDate">
+        <value condition="ListItem.IsPlaying">$INFO[ListItem.StartDate]</value>
+        <value>$INFO[ListItem.StartDate]</value>
+    </variable>
+    
+    <variable name="Colordiffuse.Color">
+        <value condition="ListItem.IsPlaying">D4FFFFFF</value>
+        <value>99FFFFFF</value>
+    </variable>
+    
+    <variable name="Colordiffuse.Color.2">
+        <value condition="ListItem.IsPlaying">D4FFFFFF</value>
+        <value>77white</value>
+    </variable>
+    
+    <variable name="Colordiffuse.Color.3">
+        <value condition="ListItem.IsPlaying">FFFFFFFF</value>
+        <value>7FFFFFFF</value>
+    </variable>
+    
+    <variable name="SelectedColor.Open">
+        <value condition="ListItem.IsPlaying"></value>
+    </variable>
+    
+    <variable name="SelectedColor.Close">
+        <value condition="ListItem.IsPlaying"></value>
     </variable>
     
     <!-- Cover Info -->

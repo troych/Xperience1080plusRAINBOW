@@ -32,7 +32,7 @@
 	                <width>974</width>
 	                <font>Font-Condensed-S34</font>
 	                <label>$LOCALIZE[19143]</label>
-	                <textcolor>ddwhite2</textcolor>
+	                <textcolor>ddwhite</textcolor>
 	                <align>center</align>
 	            </control>
 	            
@@ -50,7 +50,7 @@
 	            	    <textoffsetx>20</textoffsetx>
 	            	    <label>$LOCALIZE[42180]</label>
 	            	    <textcolor>FF585858</textcolor>
-	            	    20FFFFFF
+	            	    <shadowcolor>20FFFFFF</shadowcolor>
 	            	    <font>Font-Condensed-S30</font>
 	            	</control>
 	            	<control type="image">
@@ -69,7 +69,7 @@
 	            	    <onright>60</onright>
 	            	    <onup>13</onup>
 	            	    <ondown>13</ondown>
-	            	    <scrolltime>0</scrolltime>
+	            	    <scrolltime tween="cubic" easing="out">500</scrolltime>
 	            	    <pagecontrol>60</pagecontrol>
 	                    <itemlayout height="60">
 	                        <control type="image">
@@ -186,7 +186,7 @@
 	            	    <align>left</align>
 	            	    <textoffsetx>20</textoffsetx>
 	            	    <textcolor>FF585858</textcolor>
-	            	    20FFFFFF
+	            	    <shadowcolor>20FFFFFF</shadowcolor>
 	            	    <font>Font-Condensed-S30</font>
 	            	</control>
 	            	<control type="image">
@@ -205,7 +205,7 @@
 	            	    <onright>70</onright>
 	            	    <onup>11</onup>
 	            	    <ondown>11</ondown>
-	            	    <scrolltime>0</scrolltime>
+	            	    <scrolltime tween="cubic" easing="out">500</scrolltime>
 	            	    <pagecontrol>70</pagecontrol>
 	                    <itemlayout height="60">
 	                        <control type="image">
@@ -338,7 +338,7 @@
 	            	    <align>left</align>
 	            	    <textoffsetx>20</textoffsetx>
 	            	    <textcolor>FF585858</textcolor>
-	            	    20FFFFFF
+	            	    <shadowcolor>20FFFFFF</shadowcolor>
 	            	    <font>Font-Condensed-S30</font>
 	            	</control>
 	            	<control type="image">
@@ -357,7 +357,7 @@
 	            	    <onright>80</onright>
 	            	    <onup>12</onup>
 	            	    <ondown>12</ondown>
-	            	    <scrolltime>0</scrolltime>
+	            	    <scrolltime tween="cubic" easing="out">500</scrolltime>
 	            	    <pagecontrol>80</pagecontrol>
 	                    <itemlayout height="60">
 	                        <control type="image">

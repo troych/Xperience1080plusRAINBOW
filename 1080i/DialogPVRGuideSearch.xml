@@ -25,7 +25,7 @@
     	        <width>1214</width>
     	        <label>$LOCALIZE[19142]</label>
     	        <font>Font-Condensed-S34</font>
-    	        <textcolor>ddwhite2</textcolor>
+    	        <textcolor>ddwhite</textcolor>
     	        <align>center</align>
     	    </control>
     	    <control type="group">
@@ -41,7 +41,7 @@
     	            <textoffsetx>20</textoffsetx>
     	            <label>$LOCALIZE[19133]</label>
     	            <textcolor>FF585858</textcolor>
-    	            20FFFFFF
+    	            <shadowcolor>20FFFFFF</shadowcolor>
     	            <font>Font-Condensed-S30</font>
     	        </control>
     	        <control type="image">
@@ -63,7 +63,7 @@
         	        <textcolor>FF585858</textcolor>
         	        <focusedcolor>eewhite</focusedcolor>
         	        <disabledcolor>FF585858</disabledcolor>
-        	        20FFFFFF
+        	        <shadowcolor>20FFFFFF</shadowcolor>
         	        <font>Font-Condensed-S32</font>
         	        <pulseonselect>false</pulseonselect>
         	        <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
@@ -96,10 +96,9 @@
         	        <width>1174</width>
         	        <height>74</height>
         	        <align>justify</align>
-        	        <textoffsetx>20</textoffsetx>
         	        <label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
         	        <textcolor>FF585858</textcolor>
-        	        20FFFFFF
+        	        <shadowcolor>20FFFFFF</shadowcolor>
         	        <font>Font-Condensed-S28</font>
         	    </control>
                 <control type="group" id="8001">
@@ -126,9 +125,9 @@
                             <textcolor>FF585858</textcolor>
                             <focusedcolor>eewhite</focusedcolor>
                             <disabledcolor>77585858</disabledcolor>
-                            20FFFFFF
-                            <textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-                            <textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+                            <shadowcolor>20FFFFFF</shadowcolor>
+                            <textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+                            <textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
                             <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
                             <texturenofocus>dialogs/default/separator.png</texturenofocus>
             	    		<label>19134</label>
@@ -150,9 +149,9 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
-            	    		<textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-            	    		<textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
+            	    		<textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+            	    		<textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
             	    		<texturenofocus>dialogs/default/separator.png</texturenofocus>
             	    		<label>19135</label>
@@ -173,7 +172,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>FF585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<font>Font-Condensed-S32</font>
             	    		<pulseonselect>false</pulseonselect>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
@@ -196,7 +195,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>FF585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<font>Font-Condensed-S32</font>
             	    		<pulseonselect>false</pulseonselect>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
@@ -222,7 +221,7 @@
         	    		    <textcolor>FF585858</textcolor>
         	    		    <focusedcolor>eewhite</focusedcolor>
         	    		    <disabledcolor>77585858</disabledcolor>
-        	    		    20FFFFFF
+        	    		    <shadowcolor>20FFFFFF</shadowcolor>
         	    		    <textoffsetx>20</textoffsetx>
         	    		    <spinposx>5</spinposx>
             	    		<label>515</label>
@@ -244,9 +243,9 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
-            	    		<textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-            	    		<textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
+            	    		<textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+            	    		<textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
             	    		<texturenofocus>dialogs/default/separator.png</texturenofocus>
             	    		<label>19132</label>
@@ -268,9 +267,9 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
-            	    		<textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-            	    		<textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
+            	    		<textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+            	    		<textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
             	    		<texturenofocus>dialogs/default/separator.png</texturenofocus>
             	    		<label>19123</label>
@@ -292,9 +291,9 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
-            	    		<textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-            	    		<textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
+            	    		<textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+            	    		<textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
             	    		<label>19124</label>
             	    		<onleft>27</onleft>
@@ -328,7 +327,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<textoffsetx>20</textoffsetx>
             	    		<spinposx>5</spinposx>
             	    		<label>19130</label>
@@ -352,7 +351,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<textoffsetx>20</textoffsetx>
             	    		<spinposx>5</spinposx>
             	    		<label>19131</label>
@@ -373,7 +372,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>FF585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<font>Font-Condensed-S32</font>
             	    		<pulseonselect>false</pulseonselect>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
@@ -396,7 +395,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>FF585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<font>Font-Condensed-S32</font>
             	    		<pulseonselect>false</pulseonselect>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
@@ -420,9 +419,9 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
-            	    		<textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-            	    		<textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
+            	    		<textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+            	    		<textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
             	    		<texturenofocus>dialogs/default/separator.png</texturenofocus>
             	    		<label>19121</label>
@@ -446,7 +445,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<textoffsetx>20</textoffsetx>
             	    		<spinposx>5</spinposx>
             	    		<label>19141</label>
@@ -470,7 +469,7 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
             	    		<textoffsetx>20</textoffsetx>
             	    		<spinposx>5</spinposx>
             	    		<label>19148</label>
@@ -492,9 +491,9 @@
             	    		<textcolor>FF585858</textcolor>
             	    		<focusedcolor>eewhite</focusedcolor>
             	    		<disabledcolor>77585858</disabledcolor>
-            	    		20FFFFFF
-            	    		<textureradiofocus>buttons/radio/radio-light-fo.png</textureradiofocus>
-            	    		<textureradionofocus>buttons/radio/radio-light-nf.png</textureradionofocus>
+            	    		<shadowcolor>20FFFFFF</shadowcolor>
+            	    		<textureradioon>buttons/radio/radio-light-fo.png</textureradioon>
+            	    		<textureradiooff>buttons/radio/radio-light-nf.png</textureradiooff>
             	    		<texturefocus border="2">dialogs/default/highlight.png</texturefocus>
             	    		<label>19125</label>
             	    		<onleft>24</onleft>
