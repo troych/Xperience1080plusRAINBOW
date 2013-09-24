@@ -2569,7 +2569,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(ListItem.Path,videodb://1/7,left)</visible>
+                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2715,7 +2715,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(ListItem.Path,videodb://1/7,left)</visible>
+                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                         </control>
                         <control type="image">

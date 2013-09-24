@@ -203,7 +203,7 @@
                         <height>100</height>
                         <aspect>keepaspect</aspect>
                         <texture>flagsosd/other/set-default.png</texture>
-                        <visible>substring(ListItem.Path,videodb://1/7,left)</visible>
+                        <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                         <colordiffuse>7FFFFFFF</colordiffuse>
                     </control>
                     <control type="image">
@@ -656,7 +656,7 @@
                             <height>100</height>
                             <aspect>keepaspect</aspect>
                             <texture>flagsosd/other/set-default.png</texture>
-                            <visible>substring(ListItem.Path,videodb://1/7,left)</visible>
+                            <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             <colordiffuse>D4FFFFFF</colordiffuse>
                         </control>
                         <control type="image">
@@ -1360,7 +1360,7 @@
                             <height>60</height>
                             <aspect>keepaspect</aspect>
                             <texture>flags/other/set-list.png</texture>
-                            <visible>substring(ListItem.Path,videodb://1/7,left)</visible>
+                            <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             <colordiffuse>7FFFFFFF</colordiffuse>
                         </control>
                         <control type="group">
@@ -1605,7 +1605,7 @@
                                 <height>60</height>
                                 <aspect>keepaspect</aspect>
                                 <texture>flags/other/set-list.png</texture>
-                                <visible>substring(ListItem.Path,videodb://1/7,left)</visible>
+                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                                 <colordiffuse>D4FFFFFF</colordiffuse>
                             </control>
                             <control type="group">
@@ -4874,7 +4874,7 @@
                                 <width>42</width>
                                 <height>28</height>
                                 <texture>flags/other/set-banner.png</texture>
-                                <visible>substring(ListItem.Path,videodb://1/7,left)</visible>
+                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                             <control type="label">
                                 <posx>53</posx>
@@ -4885,7 +4885,7 @@
                                 <textcolor>FF333333</textcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                                <visible>!IsEmpty(ListItem.VideoResolution) | substring(ListItem.Path,videodb://1/7,left)</visible>
+                                <visible>!IsEmpty(ListItem.VideoResolution) | substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                             <control type="label">
                                 <posx>0</posx>
@@ -4896,7 +4896,7 @@
                                 <textcolor>FF333333</textcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                                <visible>IsEmpty(ListItem.VideoResolution) + !substring(ListItem.Path,videodb://1/7,left)</visible>
+                                <visible>IsEmpty(ListItem.VideoResolution) + !substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                             <control type="image">
                                 <description>Rating star</description>

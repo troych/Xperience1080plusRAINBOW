@@ -335,7 +335,7 @@
                         <visible>!IsEmpty(ListItem.Artist)</visible>
                     </control>
                     <control type="group">
-                        <visible>stringcompare(Container.FolderPath,musicdb://5/1/)</visible>
+                        <visible>stringcompare(Container.FolderPath,musicdb://top100/songs/)</visible>
                         <control type="image">
                             <posx>1212</posx>
                             <posy>29</posy>
@@ -368,7 +368,7 @@
                         <textcolor>99FFFFFF</textcolor>
                         <selectedcolor>99FFFFFF</selectedcolor>
                         <scroll>false</scroll>
-                        <visible>!IsEmpty(ListItem.Duration) + !stringcompare(Container.FolderPath,musicdb://5/1/)</visible>
+                        <visible>!IsEmpty(ListItem.Duration) + !stringcompare(Container.FolderPath,musicdb://top100/songs/)</visible>
                     </control>
                     <control type="image">
                         <posx>1261</posx>
@@ -770,7 +770,7 @@
                                 <visible>!IsEmpty(ListItem.Artist)</visible>
                             </control>
                             <control type="group">
-                                <visible>stringcompare(Container.FolderPath,musicdb://5/1/)</visible>
+                                <visible>stringcompare(Container.FolderPath,musicdb://top100/songs/)</visible>
                                 <control type="image">
                                     <posx>1212</posx>
                                     <posy>29</posy>
@@ -802,7 +802,7 @@
                                 <textcolor>D4FFFFFF</textcolor>
                                 <selectedcolor>D4FFFFFF</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.Duration) + !stringcompare(Container.FolderPath,musicdb://5/1/)</visible>
+                                <visible>!IsEmpty(ListItem.Duration) + !stringcompare(Container.FolderPath,musicdb://top100/songs/)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2706,7 +2706,7 @@
                             <textcolor>banner2</textcolor>
                             <scroll>false</scroll>
                             <align>right</align>
-                            <visible>!stringcompare(Container.FolderPath,musicdb://5/1/)</visible>
+                            <visible>!stringcompare(Container.FolderPath,musicdb://top100/songs/)</visible>
                         </control>
                         <control type="label">
                             <posx>-40</posx>
@@ -2718,7 +2718,7 @@
                             <textcolor>banner2</textcolor>
                             <scroll>false</scroll>
                             <align>right</align>
-                            <visible>stringcompare(Container.FolderPath,musicdb://5/1/)</visible>
+                            <visible>stringcompare(Container.FolderPath,musicdb://top100/songs/)</visible>
                         </control>
                         <control type="image">
                             <posx>2</posx>
