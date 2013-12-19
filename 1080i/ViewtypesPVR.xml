@@ -282,7 +282,7 @@
 	                        <selectedcolor>D4FFFFFF</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>ListItem.HasEpg</visible>
-	                        <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                        <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                    </control>
 	                    <control type="label">
 	                        <description>Title</description>
@@ -314,17 +314,17 @@
                         <control type="group">
                             <visible>ListItem.IsRecording</visible>
                             <control type="image">
-                            	<posx>950</posx>
-                            	<posy>8</posy>
-                            	<width>66</width>
-                            	<height>80</height>
+                                    <posx>-2</posx>
+                                    <posy>-10</posy>
+                                    <width>66</width>
+                                    <height>80</height>
                             	<texture>windows/pvr/epg-recording.png</texture>
                             </control>
                             <control type="image">
-                            	<posx>950</posx>
-                            	<posy>8</posy>
-                            	<width>66</width>
-                            	<height>80</height>
+                                    <posx>-2</posx>
+                                    <posy>-10</posy>
+                                    <width>66</width>
+                                    <height>80</height>
                             	<texture>windows/pvr/epg-recording-pulse.png</texture>
                             	<animation effect="fade" start="65" end="100" time="750" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                             </control>
@@ -431,7 +431,7 @@
                                 <textcolor>D4FFFFFF</textcolor>
                                 <scroll>false</scroll>
                                 <visible>ListItem.HasEpg</visible>
-                                <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+                                <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
                             </control>
                             <control type="label">
                                 <description>Label</description>
@@ -478,17 +478,17 @@
                         <control type="group">
                             <visible>ListItem.IsRecording</visible>
                             <control type="image">
-                            	<posx>950</posx>
-                            	<posy>8</posy>
-                            	<width>66</width>
-                            	<height>80</height>
+                                    <posx>-2</posx>
+                                    <posy>-10</posy>
+                                    <width>66</width>
+                                    <height>80</height>
                             	<texture>windows/pvr/epg-recording.png</texture>
                             </control>
                             <control type="image">
-                            	<posx>950</posx>
-                            	<posy>8</posy>
-                            	<width>66</width>
-                            	<height>80</height>
+                                    <posx>-2</posx>
+                                    <posy>-10</posy>
+                                    <width>66</width>
+                                    <height>80</height>
                             	<texture>windows/pvr/epg-recording-pulse.png</texture>
                             	<animation effect="fade" start="65" end="100" time="750" tween="sine" easing="in" pulse="true" condition="true">Conditional</animation>
                             </control>
@@ -805,7 +805,7 @@
 	                        <selectedcolor>D4FFFFFF</selectedcolor>
 	                        <scroll>false</scroll>
 	                        <visible>ListItem.HasEpg</visible>
-	                        <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                        <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                    </control>
 	                    <control type="label">
 	                        <description>Title</description>
@@ -952,7 +952,7 @@
 	                            <textcolor>D4FFFFFF</textcolor>
 	                            <scroll>false</scroll>
 	                            <visible>ListItem.HasEpg</visible>
-	                            <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                            <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                        </control>
 	                        <control type="label">
 	                            <description>Label</description>
@@ -1252,36 +1252,19 @@
     						<align>left</align>
     						<label>$INFO[ListItem.Label]</label>
     						<scroll>false</scroll>
-    						<visible>!ListItem.IsRecording + !ListItem.HasTimer</visible>
-    					</control>
-    					<control type="label" id="1">
-    						<posx>53</posx>
-    						<posy>0</posy>
-    						<width>0</width>
-    						<height>78</height>
-    						<font>Font-Condensed-S34</font>
-    						<aligny>center</aligny>
-    						<textcolor>77white</textcolor>
-    						<textoffsetx>11</textoffsetx>
-    						<selectedcolor>77white</selectedcolor>
-    						<shadowcolor>22000000</shadowcolor>
-    						<align>left</align>
-    						<label>$INFO[ListItem.Label]</label>
-    						<scroll>false</scroll>
-    						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
     					</control>
     					<control type="group">
     					    <visible>ListItem.IsRecording</visible>
     					    <control type="image">
-    					    	<posx>2</posx>
-    					    	<posy>0</posy>
+    					    	<posx>-8</posx>
+    					    	<posy>-15</posy>
     					    	<width>66</width>
     					    	<height>80</height>
     					    	<texture>windows/pvr/epg-recording.png</texture>
     					    </control>
     					    <control type="image">
-    					    	<posx>2</posx>
-    					    	<posy>0</posy>
+    					    	<posx>-8</posx>
+    					    	<posy>-15</posy>
     					    	<width>66</width>
     					    	<height>80</height>
     					    	<texture>windows/pvr/epg-recording-pulse.png</texture>
@@ -1289,8 +1272,8 @@
     					    </control>
     					</control>
     					<control type="image">
-    						<posx>2</posx>
-    						<posy>0</posy>
+    					    	<posx>-8</posx>
+    					    	<posy>-15</posy>
     						<width>66</width>
     						<height>80</height>
     						<texture>windows/pvr/epg-timer.png</texture>
@@ -1341,36 +1324,19 @@
     						<align>left</align>
     						<label>$INFO[ListItem.Label]</label>
     						<scroll>false</scroll>
-    						<visible>!ListItem.IsRecording + !ListItem.HasTimer</visible>
-    					</control>
-    					<control type="label" id="1">
-    						<posx>53</posx>
-    						<posy>0</posy>
-    						<width>0</width>
-    						<height>78</height>
-    						<font>Font-Condensed-S34</font>
-    						<aligny>center</aligny>
-    						<textcolor>eewhite</textcolor>
-    						<textoffsetx>11</textoffsetx>
-    						<selectedcolor>eewhite</selectedcolor>
-    						<shadowcolor>22000000</shadowcolor>
-    						<align>left</align>
-    						<label>$INFO[ListItem.Label]</label>
-    						<scroll>false</scroll>
-    						<visible>ListItem.IsRecording | ListItem.HasTimer</visible>
     					</control>
     					<control type="group">
     					    <visible>ListItem.IsRecording</visible>
     					    <control type="image">
-    					    	<posx>2</posx>
-    					    	<posy>0</posy>
+    					    	<posx>-8</posx>
+    					    	<posy>-15</posy>
     					    	<width>66</width>
     					    	<height>80</height>
     					    	<texture>windows/pvr/epg-recording.png</texture>
     					    </control>
     					    <control type="image">
-    					    	<posx>2</posx>
-    					    	<posy>0</posy>
+    					    	<posx>-8</posx>
+    					    	<posy>-15</posy>
     					    	<width>66</width>
     					    	<height>80</height>
     					    	<texture>windows/pvr/epg-recording-pulse.png</texture>
@@ -1378,8 +1344,8 @@
     					    </control>
     					</control>
     					<control type="image">
-    						<posx>2</posx>
-    						<posy>0</posy>
+    					    	<posx>-8</posx>
+    					    	<posy>-15</posy>
     						<width>66</width>
     						<height>80</height>
     						<texture>windows/pvr/epg-timer.png</texture>
@@ -3251,7 +3217,7 @@
 	                        <textcolor>77white</textcolor>
 	                        <selectedcolor>D4FFFFFF</selectedcolor>
 	                        <scroll>false</scroll>
-	                        <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                        <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                    </control>
 	                    <control type="group">
 	                        <visible>ListItem.IsRecording</visible>
@@ -3351,7 +3317,7 @@
 	                        <textcolor>77white</textcolor>
 	                        <selectedcolor>D4FFFFFF</selectedcolor>
 	                        <scroll>false</scroll>
-	                        <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                        <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                    </control>
 	                    <control type="group">
 	                        <visible>ListItem.IsRecording</visible>
@@ -3467,7 +3433,7 @@
 	                            <textcolor>D4FFFFFF</textcolor>
 	                            <selectedcolor>D4FFFFFF</selectedcolor>
 	                            <scroll>false</scroll>
-	                            <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                            <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                        </control>
 	                    </control>
 	                    <control type="group">
@@ -3584,7 +3550,7 @@
 	                            <textcolor>D4FFFFFF</textcolor>
 	                            <selectedcolor>D4FFFFFF</selectedcolor>
 	                            <scroll>false</scroll>
-	                            <animation effect="slide" end="-50" time="0" condition="ListItem.IsRecording">Conditional</animation>
+	                            <animation effect="slide" end="0" time="0" condition="ListItem.IsRecording">Conditional</animation>
 	                        </control>
 	                    </control>
 	                    <control type="group">
