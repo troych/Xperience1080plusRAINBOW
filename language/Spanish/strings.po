@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Xperience1080
 # Addon id: skin.xperience1080
 # Addon Provider: `Black
@@ -453,7 +453,7 @@ msgid "Skin version"
 msgstr "Versión de Skin"
 
 msgctxt "#41459"
-msgid "XBMC version"
+msgid "Kodi version"
 msgstr "Versión de XBMC"
 
 msgctxt "#41460"
@@ -473,7 +473,7 @@ msgid "Home"
 msgstr "Inicio"
 
 msgctxt "#41525"
-msgid "search XBMC for"
+msgid "search Kodi for"
 msgstr "buscar en XBMC"
 
 msgctxt "#41550"

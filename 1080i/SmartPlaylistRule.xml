@@ -75,7 +75,7 @@
                 <control type="group" id="8002">
                     <posx>479</posx>
                     <posy>547</posy>
-                    <control type="button" id="17">
+                    <control type="edit" id="17">
                         <description>Name Button</description>
                         <posx>0</posx>
                         <posy>0</posy>

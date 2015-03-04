@@ -60,7 +60,7 @@
                         <label>20037</label>
                         <width>338</width>
                         <height>77</height>
-                        <align>left</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
@@ -76,7 +76,7 @@
                         <label>13277</label>
                         <width>338</width>
                         <height>77</height>
-                        <align>left</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
@@ -92,7 +92,7 @@
                         <label>13279</label>
                         <width>338</width>
                         <height>77</height>
-                        <align>left</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
@@ -108,7 +108,7 @@
                         <label>13280</label>
                         <width>338</width>
                         <height>77</height>
-                        <align>left</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
@@ -124,7 +124,7 @@
                         <label>13281</label>
                         <width>338</width>
                         <height>77</height>
-                        <align>left</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
@@ -140,7 +140,7 @@
                         <label>19191</label>
                         <width>338</width>
                         <height>77</height>
-                        <align>left</align>
+                        <align>right</align>
                         <aligny>center</aligny>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus.png</texturefocus>
                         <texturenofocus border="90,3,90,3">views/list/other/separator.png</texturenofocus>
@@ -248,7 +248,7 @@
                     <posy>767</posy>
                     <width>336</width>
                     <height>100</height>
-                    <texture>windows/settings/xbmc-logo.png</texture>
+                    <texture>windows/settings/kodi-logo.png</texture>
                 </control>
                 
                 <control type="group">

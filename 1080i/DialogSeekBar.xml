@@ -1,6 +1,6 @@
 <window>
     <defaultcontrol>23</defaultcontrol>
-    <visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + [Window.IsActive(script-XBMC-Subtitles-main.xml) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
+    <visible>Window.IsActive(fullscreenvideo) + [Player.ShowInfo | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsVisible(fullscreeninfo)] + !Window.IsVisible(sliderdialog) + ![!Window.IsActive(videoosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
     <controls>
 	
 	
@@ -116,7 +116,7 @@
                             <lefttexture>osd/fullscreen/progress/left.png</lefttexture>
                             <righttexture>osd/fullscreen/progress/right.png</righttexture>
                             <overlaytexture>-</overlaytexture>
-							<visible>!VideoPlayer.Content(episodes)</visible>
+			    <visible>!VideoPlayer.Content(episodes)</visible>
                         </control>
                         <control type="progress" id="23">
                             <posx>0</posx>
@@ -130,7 +130,21 @@
                             <lefttexture>osd/fullscreen/progress/left-tvshows.png</lefttexture>
                             <righttexture>osd/fullscreen/progress/right-tvshows.png</righttexture>
                             <overlaytexture>-</overlaytexture>
-							<visible>VideoPlayer.Content(episodes)</visible>
+			    <visible>VideoPlayer.Content(episodes)</visible>
+                        </control>
+                        <control type="progress" id="401">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>1337</width>
+                            <height>25</height>
+                            <reveal>true</reveal>
+                            <texturebg>osd/fullscreen/progress/back.png</texturebg>
+                            <midtexture>osd/fullscreen/progress/mid.png</midtexture>
+                            <lefttexture>osd/fullscreen/progress/left.png</lefttexture>
+                            <righttexture>osd/fullscreen/progress/right.png</righttexture>
+                            <overlaytexture>-</overlaytexture>
+                            <colordiffuse>AAFFFFFF</colordiffuse>
+                            <visible>Player.Seeking</visible>
                         </control>
 
 						
@@ -144,6 +158,18 @@
                         <textcolor>aawhite</textcolor>
                         <font>Font-Condensed-S34</font>
                         <align>left</align>
+                        <visible>!Player.Seeking</visible>
+                    </control>
+                    <control type="label">
+                        <posx>1363</posx>
+                        <posy>0</posy>
+                        <width>360</width>
+                        <height>25</height>
+                        <label>$INFO[Player.SeekTime(hh:mm:ss)]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                        <textcolor>aawhite</textcolor>
+                        <font>Font-Condensed-S34</font>
+                        <align>left</align>
+                        <visible>Player.Seeking</visible>
                     </control>
 					
 					<control type="label">
@@ -195,7 +221,7 @@
                                 <posy>818</posy>
                                 <width>1300</width>
                                 <height>56</height>
-                                <label>[UPPERCASE]$LOCALIZE[13350][/UPPERCASE]</label>
+                                <label>[UPPERCASE]$LOCALIZE[41372][/UPPERCASE]</label>
                                 <textcolor>99FFFFFF</textcolor>
                                 <font>Font-Condensed-S50</font>
                                 <align>left</align>
@@ -216,42 +242,6 @@
                                 <scroll>false</scroll>
                                 <visible>!VideoPlayer.Content(LiveTV) + Player.Paused</visible>
                             </control>-->
-                            <control type="grouplist">
-                                <posx>290</posx>
-                                <posy>886</posy>
-                                <width>1300</width>
-                                <height>100</height>
-                                <orientation>horizontal</orientation>
-                                <itemgap>0</itemgap>
-                                <visible>VideoPlayer.Content(LiveTV)</visible>
-                                <usecontrolcoords>true</usecontrolcoords>
-                                <!-- Channel Number -->
-								<control type="label">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width min="0" max="400">auto</width>
-                                    <height>100</height>
-                                    <label>$INFO[VideoPlayer.ChannelNumber]</label>
-                                    <textcolor>77FFFFFF</textcolor>
-                                    <font>Font-Condensed-S60</font>
-                                    <align>left</align>
-                                    <aligny>center</aligny>
-                                    <scroll>false</scroll>
-                                </control>
-								<!-- Channel Name -->
-                                <control type="label">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width>900</width>
-                                    <height>100</height>
-                                    <label>[UPPERCASE]$INFO[VideoPlayer.ChannelName, ,][/UPPERCASE]</label>
-                                    <textcolor>77FFFFFF</textcolor>
-                                    <font>Font-Condensed-S60</font>
-                                    <align>left</align>
-                                    <aligny>center</aligny>
-                                    <scroll>false</scroll>
-                                </control>
-                            </control>
                         </control>
                         <control type="group">
                             <posy>825</posy>
@@ -389,7 +379,7 @@
                         </control>
                         <control type="group">
                             <posy>825</posy>
-                            <visible>VideoPlayer.Content(LiveTV)</visible>                          
+                            <visible>VideoPlayer.Content(LiveTV)</visible>
                             <control type="image">
                                 <posx>30</posx>
                                 <posy>148</posy>
@@ -445,7 +435,7 @@
                         </control>
                         <control type="group">
                             <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
-                            <posy>825</posy>                        
+                            <posy>825</posy>
                             <control type="image">
                                 <posx>110</posx>
                                 <posy>67</posy>

@@ -1,5 +1,5 @@
 <fonts>
-    <fontset id="Default" unicode="true">
+     <fontset id="Default">
         <font>
             <name>Font-Condensed-S1</name>
             <filename>OpenSansCond.ttf</filename>

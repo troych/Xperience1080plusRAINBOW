@@ -682,40 +682,40 @@
     <!-- Direct compare to the $ADDON[...] strings doesn't work -->
     <include name="MoonPhaseDummyLabels">
         <control type="label" id="32501">
-            <label>$ADDON[weather.wunderground 32501]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32502">
-            <label>$ADDON[weather.wunderground 32502]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32503">
-            <label>$ADDON[weather.wunderground 32503]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32504">
-            <label>$ADDON[weather.wunderground 32504]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32505">
-            <label>$ADDON[weather.wunderground 32505]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32506">
-            <label>$ADDON[weather.wunderground 32506]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32507">
-            <label>$ADDON[weather.wunderground 32507]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
         <control type="label" id="32508">
-            <label>$ADDON[weather.wunderground 32508]</label>
+            <label>dummy</label>
             <visible>false</visible>
         </control>
     </include>
     
-    <include name="WeatherWunderground">
+    <include name="WeatherFanart">
         <control type="group">
             <posx>1745</posx>
             <posy>26</posy>
@@ -2834,7 +2834,7 @@
                             </control>
                             <control type="label">
                                 <description>temp value</description>
-                                <posx>650</posx>
+                                <posx>546</posx>
                                 <posy>0</posy>
                                 <width>110</width>
                                 <height>95</height>
@@ -2848,100 +2848,100 @@
                     </focusedlayout>
                     <content>
                         <item>
-    						<icon>$LOCALIZE[31909]</icon>
-    						<onclick>-</onclick>
-    						<visible>IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.1.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.1.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.1.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.1.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.1.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.2.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.2.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.2.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.2.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.2.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.3.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.3.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.3.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.3.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.3.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.4.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.4.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.4.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.4.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.4.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.5.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.5.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.5.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.5.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.5.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.6.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.6.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.6.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.6.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.6.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.7.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.7.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.7.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.7.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.7.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.8.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.8.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.8.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.8.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.8.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.9.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.9.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.9.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.9.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.9.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
-    					<item>
-    						<label>$INFO[Window.Property(Hourly.10.Time)]</label>
-    						<label2>$INFO[Window.Property(Hourly.10.ShortDate)]</label2>
-    						<icon>$INFO[Window.Property(Hourly.10.FanartCode),weather/small/,.png]</icon>
-    						<property name="temp">$INFO[Window.Property(Hourly.10.Temperature)]</property>
-    						<property name="outlook">$INFO[Window.Property(Hourly.10.Outlook)]</property>
-    						<onclick>-</onclick>
-    						<visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-    					</item>
+                            <icon>$LOCALIZE[31909]</icon>
+                            <onclick>noop</onclick>
+                            <visible>IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.1.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.1.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.1.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.1.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.1.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.2.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.2.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.2.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.2.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.2.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.3.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.3.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.3.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.3.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.3.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.4.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.4.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.4.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.4.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.4.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.5.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.5.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.5.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.5.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.5.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.6.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.6.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.6.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.6.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.6.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.7.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.7.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.7.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.7.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.7.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.8.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.8.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.8.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.8.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.8.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.9.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.9.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.9.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.9.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.9.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
+                        <item>
+                            <label>$INFO[Window.Property(Hourly.10.Time)]</label>
+                            <label2>$INFO[Window.Property(Hourly.10.ShortDate)]</label2>
+                            <icon>$INFO[Window.Property(Hourly.10.FanartCode),weather/small/,.png]</icon>
+                            <property name="temp">$INFO[Window.Property(Hourly.10.Temperature)]</property>
+                            <property name="outlook">$INFO[Window.Property(Hourly.10.Outlook)]</property>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                        </item>
                     </content>
                 </control>
                 <control type="image" id="313">

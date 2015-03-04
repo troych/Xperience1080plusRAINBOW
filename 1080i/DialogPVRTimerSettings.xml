@@ -95,7 +95,7 @@
                 <spinposx>5</spinposx>
             </control>
             
-            <control type="sliderex" id="10">
+            <control type="sliderex" id="13">
                 <posx>0</posx>
                 <posy>0</posy>
                 <height>60</height>

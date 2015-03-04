@@ -16,7 +16,7 @@
                 <texture>dialogs/profile/profilebg.png</texture>
             </control>
 
-            <control type="image" id="2">
+            <control type="image" id="101">
                 <description>profile image</description>
                 <posx>920</posx>
                 <posy>235</posy>
@@ -34,8 +34,8 @@
                 <font>Font-Condensed-S34</font>
                 <textcolor>ddwhite2</textcolor>
                 <align>center</align>
-                <label>$INFO[Control.GetLabel(1000)]</label>
-                <visible>IsEmpty(Control.GetLabel(2))</visible>
+                <label>$INFO[Control.GetLabel(102)]</label>
+                <visible>IsEmpty(Control.GetLabel(101))</visible>
             </control>
             
             <control type="grouplist" id="5">
@@ -53,7 +53,7 @@
                 <ondown>1004</ondown>
             </control>
             
-            <control type="label" id="1000">
+            <control type="label" id="102">
                 <description>profile name</description>
                 <posx>1322</posx>
                 <posy>361</posy>
@@ -72,7 +72,7 @@
                 <width>352</width>
                 <height>60</height>
                 <align>right</align>
-                <label>$INFO[Control.GetLabel(1000)]</label>
+                <label>$INFO[Control.GetLabel(102)]</label>
                 <font>Font-Condensed-S32</font>
                 <textcolor>eewhite</textcolor>
                 <visible>ControlGroup(5).HasFocus() + ControlGroup(5).HasFocus(30)</visible>
@@ -84,10 +84,10 @@
                 <posy>431</posy>
                 <width>40</width>
                 <height>40</height>
-                <texture>$INFO[Control.GetLabel(2)]</texture>
+                <texture>$INFO[Control.GetLabel(101)]</texture>
             </control>
             
-            <control type="label" id="1001">
+            <control type="label" id="103">
                 <description>profile location</description>
                 <posx>1322</posx>
                 <posy>481</posy>
@@ -106,7 +106,7 @@
                 <width>352</width>
                 <height>60</height>
                 <align>right</align>
-                <label>$INFO[Control.GetLabel(1001)]</label>
+                <label>$INFO[Control.GetLabel(103)]</label>
                 <font>Font-Condensed-S32</font>
                 <textcolor>eewhite</textcolor>
                 <visible>ControlGroup(5).HasFocus() + ControlGroup(5).HasFocus(32) + !IsEmpty(Control.GetLabel(33))</visible>
@@ -174,9 +174,9 @@
                 <textoffsetx>20</textoffsetx>
                 <sliderwidth>140</sliderwidth>
                 <sliderheight>20</sliderheight>
-                <texturesliderbar>buttons/OSD/slider_back.png</texturesliderbar>
-                <textureslidernib>buttons/OSD/orb_nofo.png</textureslidernib>
-                <textureslidernibfocus>buttons/OSD/orb_fo.png</textureslidernibfocus>
+                <texturesliderbar>buttons/osd/slider_back.png</texturesliderbar>
+                <textureslidernib>buttons/osd/orb_nofo.png</textureslidernib>
+                <textureslidernibfocus>buttons/osd/orb_fo.png</textureslidernibfocus>
             </control>
             
             <control type="group" id="1004">

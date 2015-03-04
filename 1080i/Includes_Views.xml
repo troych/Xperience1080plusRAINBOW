@@ -6,7 +6,7 @@
     <include file="ViewtypesPictures.xml" />
     <include file="ViewtypesPrograms.xml" />
     <include file="ViewtypesAddons.xml" />
-    <include file="ViewtypesPVR.xml" />
+    <include file="ViewtypesPVRGuide.xml" />
 
     <include name="VideoViews">
         <include>Viewtype-List</include>
@@ -689,9 +689,9 @@
         <value>$INFO[ListItem.Title]</value>
     </variable>
     
-    <variable name="ListItem.ChannelNumber">
-        <value condition="ListItem.IsPlaying">$INFO[ListItem.ChannelNumber]</value>
-        <value>$INFO[ListItem.ChannelNumber]</value>
+    <variable name="ListItem.ChannelNumberLabel">
+        <value condition="ListItem.IsPlaying">$INFO[ListItem.ChannelNumberLabel]</value>
+        <value>$INFO[ListItem.ChannelNumberLabel]</value>
     </variable>
     
     <variable name="ListItem.StartDate">

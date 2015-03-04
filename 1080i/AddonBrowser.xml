@@ -44,6 +44,7 @@
                 <onright>50</onright>
                 <onup>9111</onup>
                 <ondown>9111</ondown>
+                <onback>50</onback>
                 <include>GeneralOptionsAnimations</include>
                 <control type="button" id="2">
                     <description>View</description>
@@ -87,14 +88,11 @@
                     <alttexturefocus>dialogs/options/buttons/down-fo.png</alttexturefocus>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(4)">Conditional</animation>
                 </control>
-                <control type="radiobutton" id="5">
-                    <description>Auto Update</description>
+                <control type="button" id="5">
+                    <description>Addon updates</description>
                     <label>$LOCALIZE[24063]</label>
                     <include>optionsbuttonsdimensions</include>
                     <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
-                    <textureradiofocus>buttons/radio/options-radio-button-fo.png</textureradiofocus>
-                    <textureradionofocus>buttons/radio/options-radio-button-nf.png</textureradionofocus>
-                    <radioposx>-19</radioposx>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(5)">Conditional</animation>
                 </control>
                 <control type="radiobutton" id="6">
@@ -147,6 +145,7 @@
                 <onright>9111</onright>
                 <onup>9222</onup>
                 <ondown>9222</ondown>
+                <onback>50</onback>
                 <include>SpecificOptionsAnimations</include>
                 <control type="button" id="101">
                     <description>Label</description>
@@ -169,6 +168,7 @@
                 <onright>9111</onright>
                 <onup>9223</onup>
                 <ondown>9223</ondown>
+                <onback>50</onback>
                 <include>ViewOptionsAnimations</include>
                 <control type="button" id="201">
                     <description>Label</description>

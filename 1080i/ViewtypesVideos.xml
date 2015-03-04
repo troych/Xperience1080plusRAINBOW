@@ -302,7 +302,7 @@
                             <colordiffuse>99FFFFFF</colordiffuse>
                         </control>
                         <control type="label">
-                            <posx>1244</posx>
+                            <posx>1214</posx>
                             <posy>28</posy>
                             <width>64</width>
                             <height>42</height>
@@ -770,7 +770,7 @@
                                 <colordiffuse>D4FFFFFF</colordiffuse>
                             </control>
                             <control type="label">
-                                <posx>1244</posx>
+                                <posx>1214</posx>
                                 <posy>28</posy>
                                 <width>64</width>
                                 <height>42</height>
@@ -1132,6 +1132,7 @@
                             <textcolor>CCFFFFFF</textcolor>
                             33000000
                             <pagecontrol>71</pagecontrol>
+                            <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
                             <font>Font-Condensed-S34</font>
                         </control>
                     </control>
@@ -1312,7 +1313,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>46</posx>
+                            <posx>0</posx>
                             <width>100</width>
                             <height>58</height>
                             <font>Font-Condensed-S31</font>
@@ -1376,7 +1377,7 @@
                             </control>
                             <control type="label">
                                 <description>Unwatched count label</description>
-                                <posx>575</posx>
+                                <posx>545</posx>
                                 <width>59</width>
                                 <height>60</height>
                                 <font>Font-Condensed-S26</font>
@@ -1558,7 +1559,7 @@
                                 
                             </control>
                             <control type="label">
-                                <posx>46</posx>
+                                <posx>0</posx>
                                 <width>100</width>
                                 <height>58</height>
                                 <font>Font-Condensed-S31</font>
@@ -1620,7 +1621,7 @@
                                 </control>
                                 <control type="label">
                                     <description>Unwatched count label</description>
-                                    <posx>575</posx>
+                                    <posx>545</posx>
                                     <width>59</width>
                                     <height>60</height>
                                     <font>Font-Condensed-S26</font>
@@ -1722,7 +1723,7 @@
                     <posy>357</posy>
                     <width>6</width>
                     <height>370</height>                    
-                    <onleft>70</onleft>
+                    <onleft>52</onleft>
                     <onright condition="!Skin.HasSetting(KioskMode)">9010</onright>
                     <onright condition="Skin.HasSetting(KioskMode)">52</onright>
                     <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
@@ -1845,6 +1846,34 @@
                             </control>
                         </control>
                     </focusedlayout>
+                </control>
+                <!--Scrollbar-->
+                <control type="image">
+                    <description>Scrollbar background (visible on focus)</description>
+                    <posx>512</posx>
+                    <posy>895</posy>
+                    <width>548</width>
+                    <height>6</height>
+                    <texture border="6,0,6,0">views/other/scrollbar-sq.png</texture>
+                    <visible>Control.IsVisible(53) + Control.HasFocus(70)</visible>
+                    <animation effect="fade" start="0" end="25" time="300" tween="sine" easing="inout">Visible</animation>
+                    <animation effect="fade" start="25" end="0" time="300" tween="sine" easing="inout">Hidden</animation>
+                </control>
+                <control type="scrollbar" id="70">
+                    <description>Scrollbar</description>
+                    <posx>512</posx>
+                    <posy>895</posy>
+                    <width>548</width>
+                    <height>6</height>
+                    <onup>53</onup>
+                    <ondown condition="!Skin.HasSetting(KioskMode)">9010</ondown>
+                    <ondown condition="Skin.HasSetting(KioskMode)">53</ondown>
+                    <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
+                    <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
+                    <orientation>horizontal</orientation>
+                    <showonepage>false</showonepage>
+                    <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(9772) + !Control.HasFocus(70)">Conditional</animation>
+                    <visible>Control.IsVisible(53)</visible>
                 </control>
             </control>
             <control type="group">
@@ -2024,22 +2053,6 @@
                         <texture>$VAR[ExtendedOverlay]</texture>
                         <visible>!IsEmpty(ListItem.Overlay)</visible>
                     </control>
-                </control>
-                <control type="scrollbar" id="70">
-                    <description>Scrollbar</description>
-                    <posx>1072</posx>
-                    <posy>871</posy>
-                    <width>738</width>
-                    <height>6</height>
-                    <onup>53</onup>
-                    <ondown condition="!Skin.HasSetting(KioskMode)">9010</ondown>
-                    <ondown condition="Skin.HasSetting(KioskMode)">53</ondown>
-                    <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
-                    <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
-                    <orientation>horizontal</orientation>
-                    <showonepage>false</showonepage>
-                    <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(9772) + !Control.HasFocus(70)">Conditional</animation>
-                    <visible>Control.IsVisible(53)</visible>
                 </control>
             </control>
         </control>
@@ -2834,7 +2847,7 @@
                     <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
                     <onup condition="Skin.HasSetting(KioskMode)">54</onup>
                     <ondown>70</ondown>
-                    <focusposition>1</focusposition>
+                    <focusposition>2</focusposition>
                     <preloaditems>2</preloaditems>
                     <animation type="WindowOpen" reversible="false">
                         <effect type="fade" start="0" end="100" time="0" />
@@ -4978,24 +4991,22 @@
                                 <visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
                                 <control type="image">
                                     <posx>882</posx>
-                                    <posy>0</posy>
-                                    <width>88</width>
-                                    <height>88</height>
-                                    <aspect>keepaspect</aspect>
-                                    <texture flipy="true">views/banner/other/unwatched-tvshows.png</texture>
+                                    <posy>1</posy>
+                                    <width>64</width>
+                                    <height>40</height>
+                                    <texture>views/banner/other/unwatched.png</texture>
                                 </control>
                                 <control type="label">
                                     <description>Unwatched count label</description>
-                                    <posx>935</posx>
-                                    <posy>36</posy>
-                                    <width>88</width>
-                                    <height>53</height>
+                                    <posx>882</posx>
+                                    <posy>0</posy>
+                                    <width>64</width>
+                                    <height>42</height>
                                     <font>Font-Condensed-S36</font>
                                     <label>$INFO[ListItem.Property(unWatchedEpisodes)]</label>
-                                    <textcolor>FFE90000</textcolor>
-                                    
+                                    <textcolor>eewhite</textcolor>
+                                    <scroll>no</scroll>
                                     <align>center</align>
-                                    <scroll>false</scroll>
                                 </control>
                             </control>
                             <control type="label">

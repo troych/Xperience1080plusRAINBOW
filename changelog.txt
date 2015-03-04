@@ -1,3 +1,6 @@
+[B]2.1 Beta 1[/B]
+• Updated for use with Kodi (Helix)
+
 [B]2.0 Beta 3[/B]
 • Updated for use with Frodo beta 3
 • Added 540P & 576P resolution flags

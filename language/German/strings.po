@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Xperience1080
 # Addon id: skin.xperience1080
 # Addon Provider: `Black
@@ -44,6 +44,14 @@ msgctxt "#41107"
 msgid "Enable CDArt"
 msgstr "CDArt aktivieren"
 
+msgctxt "#41108"
+msgid "Automatically switch to music visualisation upon play"
+msgstr "Bei Wiedergabe automatische zur Musik-Visualisation wechseln"
+
+msgctxt "#41109"
+msgid "Enable auto scrolling for text boxes"
+msgstr "Aktiviere Auto-Scrolling für Textboxen"
+
 msgctxt "#41112"
 msgid "Invert spin control"
 msgstr "\"Spin Control\" invertieren"
@@ -56,42 +64,6 @@ msgctxt "#41114"
 msgid "Bottom"
 msgstr "Unten"
 
-msgctxt "#41121"
-msgid "only if fanart widget"
-msgstr "nur bei Fanart-Widgets"
-
-msgctxt "#41122"
-msgid "only if focused"
-msgstr "nur wenn fokussiert"
-
-msgctxt "#41123"
-msgid "darker"
-msgstr "dunkler"
-
-msgctxt "#41124"
-msgid "default"
-msgstr "standard"
-
-msgctxt "#41125"
-msgid "hidden"
-msgstr "verstecken"
-
-msgctxt "#41126"
-msgid "Titlebar on home widgets"
-msgstr "Titelbalken auf Home Widgets"
-
-msgctxt "#41127"
-msgid "Show more fanart"
-msgstr "Zeige mehr Fanart"
-
-msgctxt "#41128"
-msgid "but not on homescreen"
-msgstr "aber nicht auf der Startseite"
-
-msgctxt "#41129"
-msgid "Use 'Black's app-section"
-msgstr "'Black's App Homescreenlayout nutzen"
-
 msgctxt "#41130"
 msgid "Home"
 msgstr "Hauptmenü"
@@ -99,14 +71,6 @@ msgstr "Hauptmenü"
 msgctxt "#41131"
 msgid "Manage categories"
 msgstr "Kategorien verwalten"
-
-msgctxt "#41132"
-msgid "Manage custom home tile colors"
-msgstr "Eigene Hauptmenü-Kachelfarben verwalten"
-
-msgctxt "#41133"
-msgid "Set custom home tiles to grey for"
-msgstr "Eigene Kachelfarben auf grau setzen für"
 
 msgctxt "#41134"
 msgid "Show profile image"
@@ -118,11 +82,11 @@ msgstr "Untermenü-Pfeil anzeigen"
 
 msgctxt "#41136"
 msgid "Manage custom home items"
-msgstr "Eigene Hauptmenü-Elemente verwalten"
+msgstr "Benutzerdefinierte Hauptmenüeinträge verwalten"
 
 msgctxt "#41137"
 msgid "Custom"
-msgstr "Eigen"
+msgstr "Benutzerdefiniert"
 
 msgctxt "#41138"
 msgid "Name"
@@ -166,15 +130,15 @@ msgstr "Programm Add-on"
 
 msgctxt "#41149"
 msgid "Video Playlist"
-msgstr "Video Playlist"
+msgstr "Videowiedergabeliste"
 
 msgctxt "#41150"
 msgid "Music Playlist"
-msgstr "Musik Playlist"
+msgstr "Musikwiedergabeliste"
 
 msgctxt "#41151"
 msgid "Custom"
-msgstr "Eigen"
+msgstr "Benutzerdefiniert"
 
 msgctxt "#41152"
 msgid "Music panel opens"
@@ -259,6 +223,10 @@ msgstr "Angesagte Filme"
 msgctxt "#41174"
 msgid "Trending shows"
 msgstr "Angesagte Serien"
+
+msgctxt "#41175"
+msgid "Home tile"
+msgstr "Home-Kachel"
 
 msgctxt "#41190"
 msgid "Views"
@@ -410,11 +378,11 @@ msgstr "Aktualisieren"
 
 msgctxt "#41310"
 msgid "Watched episodes: "
-msgstr "Gesehene Episoden: "
+msgstr "Gesehene Folgen: "
 
 msgctxt "#41311"
 msgid "Unwatched episodes: "
-msgstr "Ungesehene Episoden: "
+msgstr "Ungesehene Folgen: "
 
 msgctxt "#41314"
 msgid "Premiered: "
@@ -460,6 +428,10 @@ msgctxt "#41330"
 msgid "No description for this application"
 msgstr "Keine Beschreibung für diese Anwendung"
 
+msgctxt "#41331"
+msgid "Released"
+msgstr "Veröffentlicht"
+
 msgctxt "#41333"
 msgid "Get theme"
 msgstr "Lade Theme"
@@ -467,6 +439,10 @@ msgstr "Lade Theme"
 msgctxt "#41351"
 msgid "Logout"
 msgstr "abmelden ..."
+
+msgctxt "#41352"
+msgid "Reload skin"
+msgstr "Skin neu laden"
 
 msgctxt "#41360"
 msgid "Master mode off"
@@ -553,8 +529,8 @@ msgid "Skin version"
 msgstr "Skin Version"
 
 msgctxt "#41459"
-msgid "XBMC version"
-msgstr "XBMC Version"
+msgid "Kodi version"
+msgstr "Kodi Version"
 
 msgctxt "#41460"
 msgid "Guide"
@@ -564,17 +540,21 @@ msgctxt "#41504"
 msgid "Applications"
 msgstr "Anwendungen"
 
+msgctxt "#41505"
+msgid "Press \"up\" to eject"
+msgstr "\"Nach oben\" drücken zum Auswerfen"
+
 msgctxt "#41507"
 msgid "Power"
 msgstr "Energie"
 
 msgctxt "#41524"
 msgid "Home"
-msgstr "Start"
+msgstr "Startseite"
 
 msgctxt "#41525"
-msgid "search XBMC for"
-msgstr "durchsuche XBMC nach"
+msgid "search Kodi for"
+msgstr "durchsuche Kodi nach"
 
 msgctxt "#41550"
 msgid "Spotlight"
@@ -622,11 +602,19 @@ msgstr "Optionen"
 
 msgctxt "#41601"
 msgid "Initializing skin"
-msgstr ""
+msgstr "Initialisiere Skin"
 
 msgctxt "#41620"
 msgid "View options"
 msgstr "Ansichts-Optionen"
+
+msgctxt "#41621"
+msgid "Set games path"
+msgstr "Spiele-Pfad setzen"
+
+msgctxt "#41622"
+msgid "Reset games path"
+msgstr "Spiele-Pfad zurücksetzen"
 
 msgctxt "#41689"
 msgid "Location"
@@ -670,7 +658,7 @@ msgstr "Ausgestrahlt"
 
 msgctxt "#41813"
 msgid "Episodes"
-msgstr "Episoden"
+msgstr "Folgen"
 
 msgctxt "#41817"
 msgid "Items"
@@ -719,6 +707,10 @@ msgstr "Handlung anzeigen"
 msgctxt "#42019"
 msgid "Use posters"
 msgstr "Poster verwenden"
+
+msgctxt "#42020"
+msgid "Show plot on focus"
+msgstr "Zeige die Handlung im Fokus"
 
 msgctxt "#42021"
 msgid "View"
@@ -773,7 +765,7 @@ msgid "Updating local add-on directories..."
 msgstr "Lokale Add-on-Verzeichnisse aktualisieren..."
 
 msgctxt "#42160"
-msgid "TV Guide"
+msgid "TV guide"
 msgstr "TV Programm"
 
 msgctxt "#42162"
@@ -843,3 +835,83 @@ msgstr "Album bearbeiten"
 msgctxt "#42212"
 msgid "Edit song"
 msgstr "Titel bearbeiten"
+
+msgctxt "#42220"
+msgid "List"
+msgstr "Liste"
+
+msgctxt "#42222"
+msgid "Info list"
+msgstr "Info-Liste"
+
+msgctxt "#42223"
+msgid "Info list ■"
+msgstr "Info-Liste ■"
+
+msgctxt "#42224"
+msgid "Panel"
+msgstr "Panel"
+
+msgctxt "#42225"
+msgid "Panel ■"
+msgstr "Panel ■"
+
+msgctxt "#42226"
+msgid "Landscape"
+msgstr "Landscape"
+
+msgctxt "#42227"
+msgid "Poster"
+msgstr "Poster"
+
+msgctxt "#42228"
+msgid "Poster ■"
+msgstr "Poster ■"
+
+msgctxt "#42229"
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+msgctxt "#42230"
+msgid "Thumbnail ■"
+msgstr "Thumbnail ■"
+
+msgctxt "#42231"
+msgid "Banner"
+msgstr "Banner"
+
+msgctxt "#42232"
+msgid "Banner ■"
+msgstr "Banner ■"
+
+msgctxt "#42233"
+msgid "Cover"
+msgstr "Cover"
+
+msgctxt "#42234"
+msgid "Thumbnail list"
+msgstr "Thumbnail-Liste"
+
+msgctxt "#42250"
+msgid "Poster"
+msgstr "Poster"
+
+msgctxt "#42251"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#42252"
+msgid "Banner"
+msgstr "Banner"
+
+msgctxt "#42253"
+msgid "Landscape"
+msgstr "Landscape"
+
+msgctxt "#42254"
+msgid "Logo"
+msgstr "Logo"
+
+msgctxt "#42255"
+msgid "ClearArt"
+msgstr "ClearArt"

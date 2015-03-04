@@ -769,7 +769,7 @@
                     <onright condition="Skin.HasSetting(HomeHome) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HomePrograms)">625</onright>
                     <onright condition="Skin.HasSetting(HomeHome) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + !Skin.HasSetting(HomeWeather)">725</onright>
                     <onright condition="Skin.HasSetting(HomeHome) + Skin.HasSetting(HomeMovies) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeWeather)">825</onright>
-                    <onclick>ActivateWindow(pvr)</onclick>
+                    <onclick>ActivateWindow(tvchannels)</onclick>
                     <onup>80</onup>
                     <ondown>901</ondown>
                 </control>
@@ -976,44 +976,32 @@
                             <item id="1">
                                 <label>$LOCALIZE[19023]</label>
                                 <icon>windows/home/icons/tvshows.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(32)</onclick>
-                                <onclick>SetFocus(11)</onclick>
+                                <onclick>ActivateWindow(tvchannels)</onclick>
                             </item>
                             <item id="2">
                                 <label>$LOCALIZE[19024]</label>
                                 <icon>windows/home/icons/radio.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(33)</onclick>
-                                <onclick>SetFocus(12)</onclick>
+                                <onclick>ActivateWindow(radiochannels)</onclick>
                             </item>
                             <item id="3">
                                 <label>$LOCALIZE[19069]</label>
                                 <icon>windows/home/icons/epg.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(31)</onclick>
-                                <onclick>SetFocus(10)</onclick>
+                                <onclick>ActivateWindow(tvguide)</onclick>
                             </item>
                             <item id="4">
                                 <label>$LOCALIZE[19163]</label>
                                 <icon>windows/home/icons/recordings.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(34)</onclick>
-                                <onclick>SetFocus(13)</onclick>
+                                <onclick>ActivateWindow(tvrecordings)</onclick>
                             </item>
                             <item id="5">
                                 <label>$LOCALIZE[19040]</label>
                                 <icon>windows/home/icons/timers.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(35)</onclick>
-                                <onclick>SetFocus(14)</onclick>
+                                <onclick>ActivateWindow(tvtimers)</onclick>
                             </item>
                             <item id="6">
                                 <label>$LOCALIZE[137]</label>
                                 <icon>windows/home/icons/search-tv.png</icon>
-                                <onclick>ActivateWindow(PVR)</onclick>
-                                <onclick>SetFocus(36)</onclick>
-                                <onclick>SetFocus(17)</onclick>
+                                <onclick>ActivateWindow(tvsearch)</onclick>
                             </item>
                         </content>
                     </control>
@@ -1990,7 +1978,7 @@
                                     <textoffsetx>20</textoffsetx>
                                 </control>
                                 <control type="label">
-                                    <posx>307</posx>
+                                    <posx>30</posx>
                                     <posy>241</posy>
                                     <width>283</width>
                                     <height>66</height>
@@ -2052,7 +2040,7 @@
                                         <textoffsetx>20</textoffsetx>
                                     </control>
                                     <control type="label">
-                                        <posx>307</posx>
+                                        <posx>30</posx>
                                         <posy>241</posy>
                                         <width>283</width>
                                         <height>66</height>
@@ -2693,7 +2681,7 @@
                                     <textoffsetx>20</textoffsetx>
                                 </control>
                                 <control type="label">
-                                    <posx>307</posx>
+                                    <posx>30</posx>
                                     <posy>241</posy>
                                     <width>283</width>
                                     <height>66</height>
@@ -2754,7 +2742,7 @@
                                         <textoffsetx>20</textoffsetx>
                                     </control>
                                     <control type="label">
-                                        <posx>307</posx>
+                                        <posx>30</posx>
                                         <posy>241</posy>
                                         <width>283</width>
                                         <height>66</height>
@@ -3342,7 +3330,7 @@
                                     <textoffsetx>20</textoffsetx>
                                 </control>
                                 <control type="label">
-                                    <posx>307</posx>
+                                    <posx>30</posx>
                                     <posy>241</posy>
                                     <width>283</width>
                                     <height>66</height>
@@ -3404,7 +3392,7 @@
                                         <textoffsetx>20</textoffsetx>
                                     </control>
                                     <control type="label">
-                                        <posx>307</posx>
+                                        <posx>30</posx>
                                         <posy>241</posy>
                                         <width>283</width>
                                         <height>66</height>
@@ -4981,7 +4969,7 @@
                                         <scroll>false</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>552</posx>
+                                        <posx>10</posx>
                                         <posy>1</posy>
                                         <width>532</width>
                                         <height>57</height>
@@ -5015,7 +5003,7 @@
                                         <scroll>false</scroll>
                                     </control>
                                     <control type="label">
-                                        <posx>552</posx>
+                                        <posx>10</posx>
                                         <posy>1</posy>
                                         <width>532</width>
                                         <height>57</height>

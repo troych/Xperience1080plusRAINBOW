@@ -7,23 +7,24 @@
         <include>WeatherHeader</include>
 
         <control type="group">
-            <include condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">WeatherDefault</include>
-            <include condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">WeatherWunderground</include>
-        </control>        
+            <include condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">WeatherDefault</include>
+            <include condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">WeatherFanart</include>
+        </control>
+
         <include>FadeBackgroundContentContext</include>
         
         <control type="button" id="101">
             <description>open options</description>
             <onleft>9111</onleft>
             <onright>9111</onright>
-            <visible>!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
+           <visible>![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
         </control>
         
         <control type="group" id="9000">
             <posx>267</posx>
             <posy>517</posy>
             <include>OptionsAnimations</include>
-            <animation effect="slide" start="0" end="-204" time="0" condition="Skin.HasSetting(HideShutdownButton)">Conditional</animation>     
+            <animation effect="slide" start="0" end="-204" time="0" condition="Skin.HasSetting(HideShutdownButton)">Conditional</animation>
             <control type="group">
                 <include>OptionsPanelAnimations</include>
                 <control type="image">
@@ -45,7 +46,7 @@
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
-            
+
             <control type="group" id="9111">
                 <posx>19</posx>
                 <posy>47</posy>
@@ -66,12 +67,14 @@
                     <texturedownfocus>buttons/spinctrl/arrow-light-down-fo.png</texturedownfocus>
                     <texturefocus>dialogs/options/buttons/location-fo.png</texturefocus>
                     <texturenofocus>dialogs/options/buttons/location-nf.png</texturenofocus>
-                    <onleft condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
-                    <onleft condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
-                    <onright condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
-                    <onright condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
+                    <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
+                    <onleft condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
+                    <onright condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
+                    <onright condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
                     <onup>273</onup>
                     <ondown>2</ondown>
+                    <onback condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onback>
+                    <onback condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onback>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(3)">Conditional</animation>
                 </control>
                 <control type="label">
@@ -105,12 +108,14 @@
                     <include>optionsbuttonsdimensions</include>
                     <texturefocus>dialogs/options/buttons/refresh-fo.png</texturefocus>
                     <texturenofocus>dialogs/options/buttons/refresh-nf.png</texturenofocus>
-                    <onleft condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
-                    <onleft condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
-                    <onright condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
-                    <onright condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
+                    <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
+                    <onleft condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
+                    <onright condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
+                    <onright condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
                     <onup>3</onup>
                     <ondown>4</ondown>
+                    <onback condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onback>
+                    <onback condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onback>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(2)">Conditional</animation>
                 </control>
                 <control type="button" id="4">
@@ -121,12 +126,14 @@
                     <texturefocus>dialogs/options/buttons/settings-fo.png</texturefocus>
                     <texturenofocus>dialogs/options/buttons/settings-nf.png</texturenofocus>
                     <onclick>ActivateWindow(MyWeatherSettings)</onclick>
-                    <onleft condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
-                    <onleft condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
-                    <onright condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
-                    <onright condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
+                    <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
+                    <onleft condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
+                    <onright condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
+                    <onright condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
                     <onup>2</onup>
                     <ondown>271</ondown>
+                    <onback condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onback>
+                    <onback condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onback>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(4)">Conditional</animation>
                 </control>
                 <control type="radiobutton" id="271">
@@ -143,12 +150,14 @@
                     <textureradiofocus>buttons/radio/options-radio-button-fo.png</textureradiofocus>
                     <textureradionofocus>buttons/radio/options-radio-button-nf.png</textureradionofocus>
                     <radioposx>-19</radioposx>
-                    <onleft condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
-                    <onleft condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
-                    <onright condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
-                    <onright condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
+                    <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
+                    <onleft condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
+                    <onright condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
+                    <onright condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
                     <onup>4</onup>
                     <ondown>272</ondown>
+                    <onback condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onback>
+                    <onback condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onback>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(271)">Conditional</animation>
                 </control>
                 <control type="radiobutton" id="272">
@@ -162,14 +171,16 @@
                     <textureradiofocus>buttons/radio/options-radio-button-fo.png</textureradiofocus>
                     <textureradionofocus>buttons/radio/options-radio-button-nf.png</textureradionofocus>
                     <radioposx>-19</radioposx>
-                    <onleft condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
-                    <onleft condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
-                    <onright condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
-                    <onright condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
+                    <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
+                    <onleft condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
+                    <onright condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
+                    <onright condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
                     <onup>271</onup>
                     <ondown>273</ondown>
+                    <onback condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onback>
+                    <onback condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onback>
                     <enable>Skin.HasSetting(ShowWeatherFanart)</enable>
-                    <visible>!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
+                    <visible>![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(272)">Conditional</animation>
                 </control>
                 <control type="button" id="273">
@@ -181,17 +192,19 @@
                     <texturenofocus>dialogs/options/buttons/bullet-nf.png</texturenofocus>
                     <onclick>Skin.SetPath(WeatherFanartDir)</onclick>
                     <enable>Skin.HasSetting(ShowWeatherFanart)</enable>
-                    <onleft condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
-                    <onleft condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
-                    <onright condition="!StringCompare(Weather.Plugin,weather.wunderground) | ![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
-                    <onright condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
+                    <onleft condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onleft>
+                    <onleft condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onleft>
+                    <onright condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onright>
+                    <onright condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onright>
                     <onup>272</onup>
                     <ondown>3</ondown>
-                    <animation effect="slide" end="0,-57" time="0" condition="StringCompare(Weather.Plugin,weather.wunderground) + Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">Conditional</animation>
+                    <onback condition="![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]">101</onback>
+                    <onback condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">40</onback>
+                    <animation effect="slide" end="0,-57" time="0" condition="Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))">Conditional</animation>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(273)">Conditional</animation>
                 </control>
             </control>
-            
+
             <control type="group">
                 <include>GeneralOptionsAnimations</include>
                 <control type="image">

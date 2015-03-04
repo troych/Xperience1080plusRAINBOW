@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Xperience1080
 # Addon id: skin.xperience1080
 # Addon Provider: `Black
@@ -331,7 +331,11 @@ msgctxt "#41221"
 msgid "Use genre colors in the epg"
 msgstr ""
 
-#empty strings from id 41222 to 41239
+msgctxt "#41222"
+msgid "Extended OSDs"
+msgstr ""
+
+#empty strings from id 41223 to 41239
 #OSD
 
 msgctxt "#41240"
@@ -557,6 +561,10 @@ msgctxt "#41371"
 msgid "Finish time:"
 msgstr ""
 
+msgctxt "#41372"
+msgid "Now playing..."
+msgstr ""
+
 #empty strings from id 41372 to 41404
 #LoginScreen.xml
 #From 41400 to 41419
@@ -646,7 +654,7 @@ msgid "Skin version"
 msgstr ""
 
 msgctxt "#41459"
-msgid "XBMC version"
+msgid "Kodi version"
 msgstr ""
 
 msgctxt "#41460"
@@ -683,7 +691,7 @@ msgid "Home"
 msgstr ""
 
 msgctxt "#41525"
-msgid "search XBMC for"
+msgid "search Kodi for"
 msgstr ""
 
 #empty strings from id 41526 to 41549

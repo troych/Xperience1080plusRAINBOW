@@ -1,7 +1,7 @@
 <window id="601">
         <defaultcontrol always="true">8000</defaultcontrol>
         <onload condition="Window.IsActive(fullscreenvideo)">SendClick(6)</onload>
-        <include condition="Window.IsActive(fullscreenvideo)">PVRGuideInfoZOrder</include>
+        <include condition="Window.IsActive(fullscreenvideo)">FadeBackground</include>
 	<controls>
 	    <include condition="!Window.IsActive(fullscreenvideo)">PVRGuideInfo</include>
          <include condition="Window.IsActive(fullscreenvideo)">PVRGuideInfoOSDExtended</include>

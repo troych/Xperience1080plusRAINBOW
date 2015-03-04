@@ -194,34 +194,18 @@
                             <texture background="true" fallback="windows/pvr/defaultchannel.png">$VAR[PvrListIcon]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
-                        <control type="label">
-                            <description>Label</description>
-                            <posx>185</posx>
-                            <posy>0</posy>
-                            <width>67</width>
-                            <height>58</height>
-                            <font>Font-Condensed-S34</font>
-                            <align>right</align>
-                            <label>$INFO[ListItem.ChannelNumber]</label>
-                            <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>99FFFFFF</selectedcolor>
-                            <scroll>false</scroll>
-                            <visible>ListItem.HasEpg</visible>
-                        </control>
-                        <control type="label">
-                            <description>Label</description>
-                            <posx>185</posx>
-                            <posy>0</posy>
-                            <width>67</width>
-                            <height>96</height>
-                            <font>Font-Condensed-S34</font>
-                            <align>right</align>
-                            <label>$INFO[ListItem.ChannelNumber]</label>
-                            <textcolor>99FFFFFF</textcolor>
-                            <selectedcolor>99FFFFFF</selectedcolor>
-                            <scroll>false</scroll>
-                            <visible>!ListItem.HasEpg</visible>
-                        </control>
+			 <control type="label">
+			    <description>ChannelNumber</description>
+			    <posx>870</posx>
+			    <posy>10</posy>
+			    <width>132</width>
+			    <height>96</height>
+			    <font>Font-Condensed-S60</font>
+			    <align>right</align>
+			    <label>$VAR[ListItem.ChannelNumberLabel]</label>
+			    <textcolor>44FFFFFF</textcolor>
+			    <scroll>false</scroll>
+			</control>
          <control type="progress">
          <posx>118</posx>
          <posy>58</posy>
@@ -268,7 +252,7 @@
          <description>Title</description>
          <posx>200</posx>
          <posy>42</posy>
-         <width>450</width>
+         <width>350</width>
          <height>50</height>
          <font>Font-Condensed-S28</font>
          <align>left</align>
@@ -279,9 +263,9 @@
          <visible>ListItem.HasEpg</visible>
          </control>
          <control type="label">
-         <posx>697</posx>
+         <posx>557</posx>
          <posy>42</posy>
-         <width>300</width>
+         <width>350</width>
 	 <height>50</height>
 	 <align>middle</align>
 	 <font>Font-Condensed-S28</font>
@@ -370,39 +354,23 @@
                             <texture background="true" fallback="windows/pvr/defaultchannel.png">$VAR[PvrListIcon]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
+                            <control type="label">
+                                <description>ChannelNumber</description>
+                                <posx>870</posx>
+                                <posy>10</posy>
+                                <width>132</width>
+                                <height>96</height>
+                                <font>Font-Condensed-S60</font>
+                                <align>right</align>
+                                <label>$VAR[ListItem.ChannelNumberLabel]</label>
+                                <textcolor>aawhite</textcolor>
+                                <scroll>false</scroll>
+                            </control>
                         <control type="group">
                             <animation type="Focus" condition="[Container(11).OnNext | Container(11).OnPrevious] + !Container(11).ListItem.IsPlaying" reversible="false">
                                 <effect type="fade" start="64" end="100" time="500" tween="sine" easing="inout" />
                             </animation>
                             <animation effect="fade" start="100" end="64" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(11) + !Container(11).ListItem.IsPlaying">Conditional</animation>
-                            <control type="label">
-                                <description>Label</description>
-                                <posx>185</posx>
-                                <posy>0</posy>
-                                <width>67</width>
-                                <height>58</height>
-                                <font>Font-Condensed-S34</font>
-                                <align>right</align>
-                                <label>$VAR[ListItem.ChannelNumber]</label>
-                                <textcolor>99FFFFFF</textcolor>
-                                <selectedcolor>99FFFFFF</selectedcolor>
-                                <scroll>false</scroll>
-                                <visible>ListItem.HasEpg</visible>
-                            </control>
-                            <control type="label">
-                                <description>Label</description>
-                                <posx>185</posx>
-                                <posy>0</posy>
-                                <width>67</width>
-                                <height>96</height>
-                                <font>Font-Condensed-S34-B</font>
-                                <align>right</align>
-                                <label>$VAR[ListItem.ChannelNumber]</label>
-                                <textcolor>ffe8b854</textcolor>
-                                <selectedcolor>ffe8b854</selectedcolor>
-                                <scroll>false</scroll>
-                                <visible>!ListItem.HasEpg</visible>
-                            </control>
                             <control type="label">
                                 <description>Label</description>
                                 <posx>200</posx>
@@ -449,7 +417,7 @@
                  <description>Title</description>
                  <posx>200</posx>
                  <posy>42</posy>
-                 <width>450</width>
+                 <width>350</width>
                  <height>50</height>
                  <font>Font-Condensed-S28</font>
                  <align>left</align>
@@ -460,9 +428,9 @@
                  <visible>ListItem.HasEpg</visible>
                  </control>
 	                    <control type="label">
-	                        <posx>697</posx>
+	                        <posx>557</posx>
 	                        <posy>42</posy>
-	                        <width>300</width>
+	                        <width>350</width>
 				<height>50</height>
 				<align>middle</align>
 	                        <font>Font-Condensed-S28</font>

@@ -1343,7 +1343,7 @@
                     <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
                     <onup condition="Skin.HasSetting(KioskMode)">504</onup>
                     <ondown>70</ondown>
-                    <focusposition>1</focusposition>
+                    <focusposition>2</focusposition>
                     <preloaditems>2</preloaditems>
                     <animation type="WindowOpen" reversible="false">
                         <effect type="fade" start="0" end="100" time="0" />
@@ -1780,7 +1780,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(-1).Path,videodb://1/7,left)</visible>
+                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(-1).Path,videodb://movies/sets,left)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -1938,7 +1938,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(3).Path,videodb://1/7,left)</visible>
+                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(3).Path,videodb://movies/sets,left)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2095,7 +2095,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(2).Path,videodb://1/7,left)</visible>
+                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(2).Path,videodb://movies/sets,left)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2252,7 +2252,7 @@
                                 <width>214</width>
                                 <height>120</height>
                                 <texture>flags/other/set-landscape.png</texture>
-                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(1).Path,videodb://1/7,left)</visible>
+                                <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(1).Path,videodb://movies/sets,left)</visible>
                             </control>
                         </control>
                         <control type="image">
@@ -2403,7 +2403,7 @@
                         <width>214</width>
                         <height>120</height>
                         <texture>flags/other/set-landscape.png</texture>
-                        <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(0).Path,videodb://1/7,left)</visible>
+                        <visible>Skin.HasSetting(ExtendedMoviePlot) + substring(Container(505).ListItem(0).Path,videodb://movies/sets,left)</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -2464,7 +2464,7 @@
                     <onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
                     <onup condition="Skin.HasSetting(KioskMode)">505</onup>
                     <ondown>70</ondown>
-                    <focusposition>1</focusposition>
+                    <focusposition>2</focusposition>
                     <preloaditems>2</preloaditems>
                     <animation type="WindowOpen" reversible="false">
                         <effect type="fade" start="0" end="100" time="0" />
@@ -3622,7 +3622,7 @@
                         <control type="group">
                             <visible>Container.Content(movies) | Container.Content(Sets)</visible>
                             <control type="label">
-                                <posx>85</posx>
+                                <posx>0</posx>
                                 <posy>15</posy>
                                 <width>1730</width>
                                 <label>$INFO[Container(506).ListItem.Label]</label>
@@ -3632,6 +3632,29 @@
                                 <align>left</align>
                                 <animation effect="slide" end="-73" time="0" condition="IsEmpty(Container(506).ListItem.VideoResolution)">Conditional</animation>
                                 <animation effect="slide" end="103" time="0" condition="!IsEmpty(Container(506).ListItem.MPAA)">Conditional</animation>
+                                <visible>!substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                            </control>
+                           <control type="label">
+                                <posx>185</posx>
+                                <posy>15</posy>
+                                <width>1730</width>
+                                <label>$INFO[Container(506).ListItem.Label]</label>
+                                <font>Font-Condensed-S45</font>
+                                <textcolor>aawhite2</textcolor>
+                                <scroll>false</scroll>
+                                <align>left</align>
+                                <animation effect="slide" end="-73" time="0" condition="IsEmpty(Container(506).ListItem.VideoResolution)">Conditional</animation>
+                                <animation effect="slide" end="103" time="0" condition="!IsEmpty(Container(506).ListItem.MPAA)">Conditional</animation>
+                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                            </control>
+                            <control type="image">
+                                <posx>-29</posx>
+                                <posy>-20</posy>
+                                <width>140</width>
+                                <height>100</height>
+                                <aspect>keepaspect</aspect>
+                                <texture>flags/other/set-list.png</texture>
+                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                             <control type="image">
                                 <posx>-29</posx>
@@ -4768,9 +4791,9 @@
                         <posx>110</posx>
                         <posy>830</posy>
                         <control type="group">
-                            <visible>Container.Content(movies) | Container.Content(Sets)</visible>
+                            <visible>Container.Content(movies) | Container.Content(sets)</visible>
                             <control type="label">
-                                <posx>85</posx>
+                                <posx>0</posx>
                                 <posy>15</posy>
                                 <width>1730</width>
                                 <label>$INFO[Container(56).ListItem.Label]</label>
@@ -4780,6 +4803,29 @@
                                 <align>left</align>
                                 <animation effect="slide" end="-73" time="0" condition="IsEmpty(Container(56).ListItem.VideoResolution)">Conditional</animation>
                                 <animation effect="slide" end="103" time="0" condition="!IsEmpty(Container(56).ListItem.MPAA)">Conditional</animation>
+                                <visible>!substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>185</posx>
+                                <posy>15</posy>
+                                <width>1730</width>
+                                <label>$INFO[Container(56).ListItem.Label]</label>
+                                <font>Font-Condensed-S45</font>
+                                <textcolor>aawhite2</textcolor>
+                                <scroll>false</scroll>
+                                <align>left</align>
+                                <animation effect="slide" end="-73" time="0" condition="IsEmpty(Container(56).ListItem.VideoResolution)">Conditional</animation>
+                                <animation effect="slide" end="103" time="0" condition="!IsEmpty(Container(56).ListItem.MPAA)">Conditional</animation>
+                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
+                            </control>
+                            <control type="image">
+                                <posx>-29</posx>
+                                <posy>-20</posy>
+                                <width>140</width>
+                                <height>100</height>
+                                <aspect>keepaspect</aspect>
+                                <texture>flags/other/set-list.png</texture>
+                                <visible>substring(ListItem.Path,videodb://movies/sets,left)</visible>
                             </control>
                             <control type="image">
                                 <posx>-29</posx>

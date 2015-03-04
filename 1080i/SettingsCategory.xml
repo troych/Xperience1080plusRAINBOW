@@ -245,6 +245,25 @@
             <font>Font-Condensed-S30</font>
             <textoffsetx>35</textoffsetx>
         </control>
+        <control type="sliderex" id="13">
+            <description>Default Slider</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <height>60</height>
+            <texturefocus border="2">dialogs/default/highlight.png</texturefocus>
+            <texturenofocus>dialogs/default/separator-btn.png</texturenofocus>
+            <sliderwidth>150</sliderwidth>
+            <sliderheight>28</sliderheight>
+            <texturesliderbar>dialogs/mediasource/slider-back.png</texturesliderbar>
+            <textureslidernib>dialogs/mediasource/slider-nib-nf.png</textureslidernib>
+            <textureslidernibfocus>dialogs/mediasource/slider-nib-fo.png</textureslidernibfocus>
+            <textcolor>FF585858</textcolor>
+            <focusedcolor>eewhite</focusedcolor>
+            <disabledcolor>77585858</disabledcolor>
+            <shadowcolor>20FFFFFF</shadowcolor>
+            <textoffsetx>20</textoffsetx>
+            <pulseonselect>false</pulseonselect>
+        </control>
         <control type="button" id="10">
             <description>Default Category Button</description>
             <include>SettingsCategoryButtonVars</include>
@@ -290,6 +309,7 @@
                 <onright>3</onright>
                 <onup>9111</onup>
                 <ondown>9111</ondown>
+                <onback>3</onback>
                 <include>GeneralOptionsAnimations</include>
                 <control type="button" id="20">
                     <description>Setting level button</description>
